@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    BL_RuleOperators
+ * @author     Benoît Leulliette <benoit.leulliette@gmail.com>
+ * @copyright  Copyright (c) 2018 Benoît Leulliette
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Rule\Model\Condition\AbstractCondition">
+        <plugin name="blro_rule_condition_plugin" type="BL\RuleOperators\Plugin\Rule\ConditionPlugin" sortOrder="0"/>
+    </type>
+</config>

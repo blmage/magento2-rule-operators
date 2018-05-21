@@ -1,0 +1,34 @@
+{
+    "name": "blmage/magento2-rule-operators",
+    "description": "Additional rule operators for Magento 2 (matches regex, starts/ends with)",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Benoît Leulliette",
+            "email": "benoit.leulliette@gmail.com"
+        }
+    ],
+    "homepage": "https://www.github.com/blmage/magento2-rule-operators",
+    "keywords": [
+        "magento",
+        "rules",
+        "conditions",
+        "operators",
+        "regex"
+    ],
+    "require": {
+        "magento/framework": ">=100.0.1",
+        "magento/module-rule": ">=100.0.1",
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "BL\\RuleOperators\\": ""
+        }
+    }
+}
