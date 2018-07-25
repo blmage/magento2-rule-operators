@@ -2,7 +2,14 @@
 
 ## Installation
 
-Upcoming.
+The extension must be installed via `composer`. To proceed, run these commands in your terminal:
+```
+composer require blmage/magento2-rule-operators
+php bin/magento module:enable BL_RuleOperators
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy
+```
 
 ## Documentation
 
