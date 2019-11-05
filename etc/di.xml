@@ -12,4 +12,10 @@
     <type name="Magento\Rule\Model\Condition\AbstractCondition">
         <plugin name="blro_rule_condition_plugin" type="BL\RuleOperators\Plugin\Rule\ConditionPlugin" sortOrder="0"/>
     </type>
+    <type name="Magento\CatalogRule\Model\Rule\Condition\ConditionsToSearchCriteriaMapper">
+        <plugin name="blro_rule_condition_plugin" type="BL\RuleOperators\Plugin\Rule\CriteriaMapperPlugin" sortOrder="0"/>
+    </type>
+    <type name="Magento\Catalog\Model\Api\SearchCriteria\CollectionProcessor\ConditionProcessor\ConditionBuilder\NativeAttributeCondition">
+        <plugin name="blro_rule_condition_plugin" type="BL\RuleOperators\Plugin\SearchCriteria\AttributeConditionPlugin" sortOrder="0"/>
+    </type>
 </config>
