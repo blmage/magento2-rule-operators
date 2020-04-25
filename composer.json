@@ -2,7 +2,7 @@
     "name": "blmage/magento2-rule-operators",
     "description": "Additional rule operators for Magento 2 (matches regex, starts/ends with)",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "OSL-3.0",
     "authors": [
         {
