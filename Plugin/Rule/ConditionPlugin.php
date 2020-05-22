@@ -89,6 +89,9 @@ class ConditionPlugin
 
             $isNegatedOperator = '!' === substr($operator, 0, 1);
             return (null !== $result) ? ($isNegatedOperator ? !$result : $result) : false;
+        } else if (in_array($operator, ['{}', '!{}'])) {
+            // replace `%` placeholders that have been added in CriteriaMapperPlugin
+            $subject->setValueParsed(preg_replace('(^%|%$)', '', $subject->getValueParsed()));
         }
 
         return $proceed($validatedValue);
